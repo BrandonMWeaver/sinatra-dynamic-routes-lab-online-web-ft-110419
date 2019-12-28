@@ -36,6 +36,7 @@ class App < Sinatra::Base
     when "/"
       result = (params[:number1] / params[:number2]).to_s
     end
+    result
   end
   
 end
