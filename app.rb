@@ -31,7 +31,11 @@ class App < Sinatra::Base
       result = (params[:number1] + params[:number2]).to_s
     when "-"
       result = (params[:number1] - params[:number2]).to_s
-      
+    when "*"
+      result = (params[:number1] * params[:number2]).to_s
+    when "/"
+      result = (params[:number1] / params[:number2]).to_s
+    end
   end
   
 end
