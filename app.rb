@@ -12,10 +12,12 @@ class App < Sinatra::Base
   
   get "/say/:number/:phrase" do
     i = 0
+    phrase = []
     while i < params[:number].to_i do
-      params[:phrase]
+      phrase << params[:phrase]
       i += 1
     end
+    phrase.flatten
   end
   
 end
