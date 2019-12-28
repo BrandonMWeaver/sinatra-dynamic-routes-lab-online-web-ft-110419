@@ -3,7 +3,8 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   
   get "/square/:number" do
-    (params[:number].to_i * 2).to_s
+    @result = params[:number].to_i * 2
+    @result.to_s
   end
   
 end
