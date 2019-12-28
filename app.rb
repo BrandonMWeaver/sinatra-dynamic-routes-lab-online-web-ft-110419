@@ -14,6 +14,7 @@ class App < Sinatra::Base
     i = 0
     while i < params[:number].to_i do
       params[:phrase]
+      i++
     end
   end
   
